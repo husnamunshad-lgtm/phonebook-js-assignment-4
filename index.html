@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phonebook</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>ContactHub</h1>
+        <p>Manage your contacts easily</p>
+    </header>
+    <!-- search and add contact -->
+     <div class="top-section">
+        <input type="text" id="searchInput" placeholder="Search by name or phone number">
+    <button id="addBtn">+ add contacts</button>
+    </div>
+    <!-- contactform -->
+     <div class="contact-form" id="contactForm">
+        <h2>Add contact</h2>
+        <input type="text" id="nameInput" placeholder="Full Name">
+        <input type="tel" id="phoneInput" placeholder="Phone Number">
+        <input type="email" id="emailInput" placeholder="Email Address">
+     
+     <div class="form-buttons">
+        <button id="saveBtn">Save Contact</button>
+        <button id="cancelBtn">Cancel</button>
+     </div>
+     </div>
+
+</div>
+<!-- contact count -->
+ <div class="contact-count">
+    <h2 class="contact-title">My Contacts</h2>
+    <!-- contacts appear here -->
+     <div id="contactList"></div>
+
+ </div>
+
+ <script src="./js/script.js"></script>   
+</body>
+</html>
